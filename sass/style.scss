@@ -1,6 +1,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	.carousel-cell {
+		position: relative;
 		width: 100%; /* full width */
 		height: 50vh;
 		min-height: 250px;
@@ -12,6 +13,9 @@ body {
 			max-width: 1200px; 
 			margin: 0 auto;
 		}
+	}
+	.reset {
+	position: absolute;
 	}
 	.flickity-page-dots {
 		display: none;
