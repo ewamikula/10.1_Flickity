@@ -12,7 +12,6 @@ var flkty = new Flickity( '.main-carousel', {
 });
 
 var buttonReset = document.querySelector('.reset');
-buttonReset = fizzyUIUtils.makeArray( buttons );
 
 buttonReset.addEventListener( 'click', function( event ) {
   // filter for button clicks
