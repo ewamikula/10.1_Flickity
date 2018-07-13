@@ -1,3 +1,7 @@
-.carousel-cell { width: 100%; /* full width */ height: 50vh; min-height: 250px; margin-right: 10px; }
+.carousel-cell { width: 100%; /* full width */ height: 50vh; min-height: 250px; margin-right: 10px; background-size: cover; background-position: center; }
 
 .carousel-cell .container { max-width: 1200px; margin: 0 auto; }
+
+.flickity-page-dots { bottom: -22px; }
+
+.flickity-page-dots .dot { height: 4px; width: 40px; margin: 0; border-radius: 0; }
