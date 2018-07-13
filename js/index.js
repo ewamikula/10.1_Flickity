@@ -11,11 +11,13 @@ var flkty = new Flickity( '.main-carousel', {
   // options
 });
 
-var buttonReset = document.querySelector('.reset');
+var buttonGroup = document.querySelector('.button-group');
+var buttons = buttonGroup.querySelectorAll('.button');
+buttons = fizzyUIUtils.makeArray( buttons );
 
-buttonReset.addEventListener( 'click', function( event ) {
+buttonGroup.addEventListener( 'click', function( event ) {
   // filter for button clicks
-  if ( !matchesSelector( event.target, '.reset' ) ) {
+  if ( !matchesSelector( event.target, '.button' ) ) {
     return;
   }
   var index = buttons.indexOf( event.target );
