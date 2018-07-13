@@ -7,3 +7,5 @@ body .carousel-cell .container { max-width: 1200px; margin: 0 auto; }
 body .flickity-page-dots { bottom: -22px; }
 
 body .flickity-page-dots .dot { height: 4px; width: 40px; margin: 0; border-radius: 0; }
+
+body .progress-bar { height: 20px; width: 0; background: #333; }
