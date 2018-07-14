@@ -48,8 +48,11 @@
 		background: #333;
 	}
 	.container {
-		.google-map {
+		h2 {
+			text-align: center;
+		}
+	}
+	.google-map {
 			height: 400px;
         	width: 100%;
-		}
 	}
