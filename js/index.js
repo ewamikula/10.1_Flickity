@@ -49,7 +49,7 @@ flkty.on('scroll', function(progress) {
     progressBar.style.width = progress * 100 + '%';
 });
 
-function initMap() {
+window.initMap = function() {
   // The location of Uluru
   var uluru = {lat: -25.344, lng: 131.036};
   // The map, centered at Uluru

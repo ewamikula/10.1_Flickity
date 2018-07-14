@@ -17,3 +17,5 @@
 .flickity-page-dots .dot { display: none; }
 
 .progress-bar { height: 20px; width: 0; background: #333; }
+
+.container .google-map { height: 400px; width: 100%; }
