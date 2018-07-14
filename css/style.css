@@ -6,7 +6,9 @@
 
 .main-carousel .carousel-cell .container { max-width: 1200px; margin: 0 auto; }
 
-.button-group { position: absolute; top: 50px; }
+.main-carousel .carousel-cell .container p { background: white; opacity: 0.7; font-size: 14px; }
+
+.button-group { position: absolute; top: 30px; }
 
 .flickity-page-dots { display: none; }
 
