@@ -55,41 +55,18 @@ flkty.on('scroll', function(progress) {
 
     window.initMap = function() {
         
-        var uluru = {lat: -25.363, lng: 131.044};
-        var coords2 = {lat: -25.363, lng: 134.044};
-        var coords3 = {lat: -25.363, lng: 137.044};
+        var bangkok = {lat: 13.7563309, lng: 100.50176510000006};
         
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
-            center: uluru
+            center: bangkok
         });
         
             var markerOne = new google.maps.Marker({
-            position: uluru,
+            position: bangkok,
             map: map
-        });
-        
-        markerOne.addListener('click', function(){
-            infos.innerHTML = 'You clicked markerOne';
-        });     
-                
-        var markerTwo = new google.maps.Marker({
-            position: coords2,
-            map: map
-        });
-
-        markerTwo.addListener('click', function(){
-            infos.innerHTML = 'You clicked markerTwo';
-        });     
-        
-        var markerThree = new google.maps.Marker({
-            position: coords3,
-            map: map
-        });
-        
-        markerThree.addListener('click', function(){
-            infos.innerHTML = 'You clicked markerThree';
-        });         
+        });  
+               
     };
 })();  
 
