@@ -1,6 +1,6 @@
 * { box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
 
-.main-carousel { position: relative; }
+.main-carousel { position: relative; margin: 0; }
 
 .main-carousel .carousel-cell { width: 100%; /* full width */ height: 50vh; min-height: 250px; margin-right: 10px; background-size: cover; background-position: center; }
 
@@ -16,8 +16,8 @@
 
 .flickity-page-dots .dot { display: none; }
 
-.progress-bar { height: 20px; width: 0; background: #333; }
+.progress-bar { height: 10px; width: 0; background: #333; }
 
 .container h2 { text-align: center; }
 
-.google-map { height: 400px; width: 100%; }
+.google-map { height: 400px; width: 100%; margin: 0; }

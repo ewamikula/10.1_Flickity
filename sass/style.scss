@@ -4,6 +4,7 @@
 }
 	.main-carousel {
 		position: relative;
+		margin: 0;
 		.carousel-cell {
 			width: 100%; /* full width */
 			height: 50vh;
@@ -43,7 +44,7 @@
 		}
 	}
 	.progress-bar {
-		height: 20px;
+		height: 10px;
 		width: 0;
 		background: #333;
 	}
@@ -55,4 +56,5 @@
 	.google-map {
 			height: 400px;
         	width: 100%;
+        	margin: 0;
 	}
