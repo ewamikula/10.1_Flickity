@@ -12,22 +12,39 @@
 <body>
 	<header>
 	</header>
-	<div class="main-carousel" data-flickity='{ "hash": true }'>
-		<div class="carousel-cell" id="carousel-cell1" style="background-image:url(https://images.pexels.com/photos/733092/pexels-photo-733092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-			<div class="container"><p>Kingdom of Thailand</p></div>
-		</div>
-		<div class="carousel-cell" id="carousel-cell2" style="background-image:url(https://images.pexels.com/photos/1090551/pexels-photo-1090551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-			<div class="container"><p>Bali</p></div>
-		</div>
-		<div class="carousel-cell" id="carousel-cell3" style="background-image:url(https://images.pexels.com/photos/569202/pexels-photo-569202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-			<div class="container"><p>Horseshoe Bend</p></div>
-			</div>
-		<div class="carousel-cell" id="carousel-cell4" style="background-image:url(https://images.pexels.com/photos/424184/pexels-photo-424184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-			<div class="container"><p>Hong Kong</p></div>
-		</div>
-		<div class="carousel-cell" id="carousel-cell5" style="background-image:url(https://images.pexels.com/photos/415976/pexels-photo-415976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-			<div class="container"><p>Yosemite</p></div>
-		</div>
+	 <div id="slider" class="main-carousel" data-flickity='{ "hash": true}'>
+ 
+    </div>
+
+		<script id="template-list" type="x-tmpl-mustache">
+        {{{slides}}}
+    	</script>
+ 
+    	<script id="template-slide" type="x-tmpl-mustache">
+        	<div class="carousel-cell">
+           	<img src="{{image}}" alt="{{name}}">
+       		</div>
+    	</script>
+
+    	<script>
+	        var slidesData = [{
+	            name: 'Kingdom of Thailand',
+	            image: 'https://images.pexels.com/photos/1090551/pexels-photo-1090551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+	        }, {
+	            name: 'Bali',
+	            image: 'https://images.pexels.com/photos/1090551/pexels-photo-1090551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+	        }, {
+	            name: 'Horseshoe Bend',
+	            image: 'https://images.pexels.com/photos/569202/pexels-photo-569202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+	        }, {
+	            name: 'Hong Kong',
+	            image: 'https://images.pexels.com/photos/417418/pexels-photo-417418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+	        }, {
+	            name: 'Yosemite',
+	            image: 'https://images.pexels.com/photos/36363/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+	        }];
+    	</script>
+		
 	</div>
 	<div class="button-group">
   		<button class="button">Reset</button>
@@ -36,36 +53,7 @@
 	<footer>Copyrights 2018</footer>
 	<script  src="vendor/flickity.pkgd.min.js"></script>
 	<script  src="vendor/hash.js"></script>
-	<script  src="vendor/mustache.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
 	<script  src="js/index.js"></script>
-	<script>
-		var images = [
-			{
-				image: 'image1', 
-				title: '$10',
-				description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
-			},
-			{
-				image: 'image2', 
-				title: '$10',
-				description: 'Bla, bla, bla'
-			},
-			{
-				image: 'image3', 
-				title: '$10',
-				description: 'Bla, bla, bla'
-			}
-			{
-				image: 'image4', 
-				title: '$10',
-				description: 'Bla, bla, bla'
-			}
-			{
-				image: 'image5', 
-				title: '$10',
-				description: 'Bla, bla, bla'
-			}
-		];
-	</script>
 </body>
 </html>
