@@ -8,12 +8,12 @@
  
     var listItems = '';
  
-    for (var i = 0; i < slides.length; i++) {
-        console.log(slides);
+    for (var i = 0; i < slidesData.length; i++) {
+        console.log(slidesData);
         listItems += Mustache.render(templateItem, slidesData[i]);
     }
  
-    var fullProductList = Mustache.render(templateList, { slides: listItems });
+    var fullProductList = Mustache.render(templateList, {slides: listItems });
     slider.insertAdjacentHTML('beforeend', fullProductList);
  
  
