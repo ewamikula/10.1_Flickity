@@ -1,5 +1,39 @@
-body {
-	font-family: 'Montserrat', sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background-color: orange;
+	min-height: 50px;
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			float: right;
+		}
+		li {
+			display: inline-block;
+			padding: 0 20px;
+			transition: .2s;
+			&:hover {
+		 		background-color: white;
+		}
+		a {
+		 	color: grey;
+		 	text-transform: uppercase;
+		 	text-decoration: none;
+		 	font-weight: 700;
+		 	display: block;
+		 	line-height: 50px;
+		 	}
+		}
+		img {
+		  	padding: 10px 0;
+		}
+	}
+}
 	.main-carousel {
 		position: relative;
 		.carousel-cell {
@@ -16,8 +50,9 @@ body {
 			}
 		}
 	}
-	.reset {
+	.button-group {
 		position: absolute;
+		top: 50px;
 	}
 	.flickity-page-dots {
 		display: none;
