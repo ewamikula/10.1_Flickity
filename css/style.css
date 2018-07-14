@@ -10,9 +10,9 @@
 
 .button-group { position: absolute; top: 30px; }
 
-.button-group .reset { background: black; color: white; border-radius: 15px; transition: 0.3s; }
+.button-group button { background: black; padding: 4px; color: white; border-radius: 3px; transition: 0.3s; }
 
-.button-group .reset:hover { background: white; color: black; }
+.button-group button:hover { background: white; color: black; }
 
 .flickity-page-dots { display: none; }
 

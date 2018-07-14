@@ -29,10 +29,11 @@
 	.button-group {
 		position: absolute;
 		top: 30px;
-		.reset {
+		button {
 		background: black;
+		padding: 4px;
 		color: white;
-		border-radius: 15px;
+		border-radius: 3px;
 		transition: 0.3s;
 		&:hover {
 			background: white;
