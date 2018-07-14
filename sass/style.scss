@@ -9,11 +9,17 @@
 			height: 50vh;
 			min-height: 250px;
 			margin-right: 10px;
-				img {
-					background-size: cover;
-					background-position: center;
-				}
+			background-size: cover;
+			background-position: center;
+			h1 {
+				margin-top: 20vh;
+				color: #000;
+				background-color: rgba(255, 255, 255, 0.7);
+				padding: 20px;
+				text-align: center;
+				font-size: 60px;
 			}
+		}
 	}
 	.button-group {
 		position: absolute;
