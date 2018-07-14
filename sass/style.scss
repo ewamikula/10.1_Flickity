@@ -1,26 +1,29 @@
 body {
 	font-family: 'Montserrat', sans-serif;
-	.carousel-cell {
+	.main-carousel {
 		position: relative;
-		width: 100%; /* full width */
-		height: 50vh;
-		min-height: 250px;
-		margin-right: 10px;
-		background-size: cover;
-		background-position: center;
+		.carousel-cell {
+			width: 100%; /* full width */
+			height: 50vh;
+			min-height: 250px;
+			margin-right: 10px;
+			background-size: cover;
+			background-position: center;
 
-	  	.container {
-			max-width: 1200px; 
-			margin: 0 auto;
+		  	.container {
+				max-width: 1200px; 
+				margin: 0 auto;
+			}
 		}
 	}
 	.reset {
-	position: absolute;
+		position: absolute;
 	}
 	.flickity-page-dots {
 		display: none;
-	}
-
+		.dot {
+		display: none;
+		}
 	}
 	.progress-bar {
 		height: 20px;

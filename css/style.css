@@ -1,11 +1,15 @@
 body { font-family: 'Montserrat', sans-serif; }
 
-body .carousel-cell { width: 100%; /* full width */ height: 50vh; min-height: 250px; margin-right: 10px; background-size: cover; background-position: center; }
+body .main-carousel { position: relative; }
 
-body .carousel-cell .container { max-width: 1200px; margin: 0 auto; }
+body .main-carousel .carousel-cell { width: 100%; /* full width */ height: 50vh; min-height: 250px; margin-right: 10px; background-size: cover; background-position: center; }
 
-body .flickity-page-dots { bottom: -22px; }
+body .main-carousel .carousel-cell .container { max-width: 1200px; margin: 0 auto; }
 
-body .flickity-page-dots .dot { height: 4px; width: 40px; margin: 0; border-radius: 0; }
+body .reset { position: absolute; }
+
+body .flickity-page-dots { display: none; }
+
+body .flickity-page-dots .dot { display: none; }
 
 body .progress-bar { height: 20px; width: 0; background: #333; }
