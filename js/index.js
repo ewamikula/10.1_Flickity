@@ -72,5 +72,3 @@ window.initMap = function() {
         }
     }
 })();  
-
-initMap();
