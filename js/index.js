@@ -49,25 +49,28 @@ flkty.on('scroll', function(progress) {
     progressBar.style.width = progress * 100 + '%';
 });
 
-(function(){ 
-    
-    var infos = document.getElementById('infos');
+/*flkty.on( 'scroll', function(event){    
+    map.panTo(slideslData[index].coords); 
+    map.setZoom(10);
+})*/
 
-    window.initMap = function() {
-        
-        var bangkok = {lat: 13.7563309, lng: 100.50176510000006};
-        
+(function(){
+
+window.initMap = function() {
+    
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: bangkok
+            zoom: 10,
+            center: slidesData[0].coords
         });
-        
-            var markerOne = new google.maps.Marker({
-            position: bangkok,
+
+        for (var i = 0; i < slidesData.length; i++ ){
+
+            var marker = new google.maps.Marker({
+            position: slidesData[i].coords,
             map: map
-        });  
-               
-    };
+            });
+        }
+    }
 })();  
 
 initMap();
