@@ -63,7 +63,7 @@ window.initMap = function() {
             center: slidesData[0].coords
         });
 
-        for (var i = 0; i < slidesData.length; i++ ){
+        for (let i = 0; i < slidesData.length; i++ ){
 
             var marker = new google.maps.Marker({
             position: slidesData[i].coords,
@@ -71,7 +71,7 @@ window.initMap = function() {
             });
 
             marker.addListener('click', function(){
-            flkty.selectCell(slidesData[i]);
+            flkty.selectCell(i);
         });
         }    
 };
