@@ -49,8 +49,9 @@
 		background: #333;
 	}
 	.container {
-		h2 {
+		h2, p {
 			text-align: center;
+			color: #00b894;
 		}
 	}
 	.google-map {
@@ -58,3 +59,12 @@
         	width: 100%;
         	margin: 0;
 	}
+footer {
+	margin: 0;
+	background: #00b894;
+	color: #fff;
+	font-size: 11px;
+	text-align: center;
+	min-height: 40px;
+	line-height: 40px;
+}

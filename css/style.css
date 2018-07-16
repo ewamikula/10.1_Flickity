@@ -18,6 +18,8 @@
 
 .progress-bar { height: 10px; width: 0; background: #333; }
 
-.container h2 { text-align: center; }
+.container h2, .container p { text-align: center; color: #00b894; }
 
 .google-map { height: 50vh; width: 100%; margin: 0; }
+
+footer { margin: 0; background: #00b894; color: #fff; font-size: 11px; text-align: center; min-height: 40px; line-height: 40px; }

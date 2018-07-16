@@ -49,10 +49,7 @@ flkty.on('scroll', function(progress) {
     progressBar.style.width = progress * 100 + '%';
 });
 
-flkty.on( 'change', function(point){    
-    map.panTo(slidesData[i].coords); 
-    map.setZoom(10);
-});
+
 
 (function(){
 
@@ -73,6 +70,10 @@ window.initMap = function() {
             marker.addListener('click', function(){
             flkty.selectCell(i);
         });
-        }    
+        }
+        flkty.on('change', function(index) {
+        map.panTo(slidesData[index].coords); 
+        map.setZoom(10);
+});    
 };
 })();  
